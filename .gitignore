@@ -16,3 +16,7 @@ dist/
 # IDE
 .vscode/
 .idea/
+
+# Secrets
+backend/firebase-admin.json
+backend/certs/ca.pem

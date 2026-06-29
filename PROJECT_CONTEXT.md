@@ -163,6 +163,38 @@ A chat belongs to a product.
 
 ---
 
+## Dependency Management
+
+- Whenever introducing a new third-party library, always update requirements.txt in the same task.
+- Explain why each new dependency is required.
+- Do not assume a dependency is already installed.
+- Prefer existing project dependencies whenever possible.
+- Do not introduce new libraries if the same functionality can be achieved using the current stack.
+
+---
+
+## Incremental Development
+
+- Implement only one logical module or feature at a time.
+- After each implementation, ensure the project starts and runs correctly.
+- Do not continue with new modules until the current implementation has been validated.
+- Keep changes as small and focused as possible.
+- Prefer multiple small commits over one large commit.
+
+---
+
+## Scope Control
+
+- Modify only the files required for the requested task.
+- Do not refactor unrelated code.
+- Do not rename files or folders unless explicitly requested.
+- Preserve the existing project architecture.
+- If a requested change affects other modules, explain why before making modifications.
+
+---
+
+
+
 ## AI Assistant Rules
 
 Before generating code:
@@ -174,5 +206,7 @@ Before generating code:
 5. Do not refactor existing code unless explicitly requested.
 6. Do not create unused files.
 7. Respect the architecture described in this document.
+8. If a new dependency is introduced, update requirements.txt.
+9. Ensure the project still starts successfully after each implementation.
 
 When uncertain, ask for clarification instead of making assumptions.
